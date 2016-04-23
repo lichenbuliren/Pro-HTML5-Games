@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/game.js"></script>
+    <title>Froot Wars</title>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="640" height="480" class="game-layer"></canvas>
+        <div id="score-screen" class="game-layer">
+            <img src="images/icons/sound.png" alt="" id="toggle-music">
+            <img src="images/icons/prev.png" alt="">
+            <span id="score">Score: 0</span>
+        </div>
+        <div id="game-start-screen" class="game-layer">
+            <img src="images/icons/play.png" alt="Play Game" onclick="game.showLevelScreen()"><br>
+            <img src="images/icons/settings.png" alt="Settings">
+        </div>
+        <div id="level-select-screen" class="game-layer"></div>
+        <div id="loading-screen" class="game-layer">
+            <div id="loading-message"></div>
+        </div>
+        <div id="ending-screen" class="game-layer">
+            <div>
+                <p id="ending-message">The Level is Over</p>
+                <P id="play-current-level"><img src="images/icons/prev.png" alt="">Replay Current Level</P>
+                <p id="play-next-level"><img src="images/icons/next.png" alt="">Play Next Level</p>
+                <p id="show-level-screen"><img src="images/icons/return.png" alt="">Return to Level Screen</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

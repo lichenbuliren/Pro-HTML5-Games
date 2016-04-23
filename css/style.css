@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#game-container{
+    width: 640px;
+    height: 480px;
+    margin: 0 auto;
+    background: url('../images/splashscreen.png');
+    border:1px solid black;
+}
+
+.game-layer{
+    width: 640px;
+    height: 480px;
+    position: absolute;
+    display: none;
+}
+
+/* 开始菜单画面 */
+#game-start-screen{
+    text-align: center;
+}
+
+#game-start-screen img{
+    margin: 10px;
+    cursor: pointer;
+}
+
+#game-start-screen img:nth-child(1){
+    margin-top: 250px;
+}
+
+/* 关卡选画面 */
+#level-select-screen{
+    padding-top: 150px;
+    padding-left: 50px;
+}
+
+#level-select-screen input{
+    margin: 20px;
+    cursor: pointer;
+    background: url('../images/icons/level.png') no-repeat;
+    color: yellow;
+    font-size: 20px;
+    width: 64px;
+    height: 64px;
+    border: 0;
+}
+
+#loading-screen{
+    background: rgba(100,100,100,.3);
+}
+
+#loading-message{
+    margin-top: 400px;
+    text-align: center;
+    height: 48px;
+    color: white;
+    background: url('../images/loader.gif') no-repeat center;
+    font-size: 12px Arial;
+}
+
+
+
+
+
+
+
+
